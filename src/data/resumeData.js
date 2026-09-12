@@ -1,0 +1,242 @@
+// Single source of truth for every section of the portfolio.
+// Edit this file — OR update the GitHub Gist at VITE_RESUME_GIST_URL —
+// to propagate changes everywhere without a redeploy.
+//
+// NOTE: NODES contains Math.PI and is always read from this bundled file.
+// All other exports are overridden by the live Gist data once fetched.
+
+export const PROFILE = {
+  name: "Abhishek Kushwaha",
+  location: "Kalaiya, Bara, Nepal",
+  avatar: "/avatar.jpg",
+  tagline: "BCA – Data Science student, Chandigarh University (5th Semester)",
+  pitch:
+    "I'm a BCA Data Science student with a strong interest in Data Analytics, Machine Learning, Software Development, and Cybersecurity. I enjoy turning real-world problems into practical, data-driven solutions and have experience working with Python, SQL, Pandas, Power BI, Android development, Linux, and cybersecurity fundamentals. Through projects, hackathons, certifications, and hands-on learning, I'm continuously developing my technical and problem-solving skills with the goal of building impactful solutions and growing as a technology professional.",
+  highlights: [
+    "🏆 Hackathon Winner — Developed Smart Faculty Locator, a real-world faculty-location solution using Streamlit, Pandas, and Firebase.",
+    "🔐 Cybersecurity Experience — Hands-on exposure to cybersecurity fundamentals, networking, Linux/Kali Linux, ethical hacking concepts, and security tools.",
+    "📊 Data Science & Development — Experience with Python, SQL, Pandas, Machine Learning, Power BI, and Android application development.",
+  ],
+  resumeFile: "/resume.pdf",
+  email: "abhishekkushwaha1099@gmail.com",
+  github: "https://github.com/Abhishek-H4X",
+  linkedin: "https://linkedin.com/in/abhishek-kushwaha-2a1524329",
+};
+
+export const NODES = [
+  {
+    id: "profile",
+    label: "Abhishek Kushwaha",
+    color: "#FFC857",
+    position: [0, 0, 0],
+    summary: "Who I am, and what I'm looking for.",
+    orbitRadius: 0,
+    orbitSpeed: 0,
+    nodeScale: 1.0,
+    isSun: true,
+  },
+  {
+    id: "experience",
+    label: "Experience",
+    color: "#00FF87",
+    position: [2.2, 0, 0],
+    summary: "Data analysis, sales, teaching, and cybersecurity training.",
+    orbitRadius: 2.2,
+    orbitSpeed: 0.3,
+    orbitOffset: 0,
+    nodeScale: 0.55,
+  },
+  {
+    id: "projects",
+    label: "Projects",
+    color: "#7C5CFF",
+    position: [3.5, 0, 0],
+    summary: "Hackathon-winning app, ML models, dashboards, and an Android app.",
+    orbitRadius: 3.5,
+    orbitSpeed: 0.22,
+    orbitOffset: Math.PI * 0.7,
+    nodeScale: 0.45,
+  },
+  {
+    id: "skills",
+    label: "Data Science Core",
+    color: "#00D2FF",
+    position: [4.8, 0, 0],
+    summary: "Data science, programming, cybersecurity, and development tools.",
+    orbitRadius: 4.8,
+    orbitSpeed: 0.16,
+    orbitOffset: Math.PI * 1.3,
+    nodeScale: 0.5,
+  },
+  {
+    id: "education",
+    label: "Education & Certs",
+    color: "#FF5C7A",
+    position: [6.2, 0, 0],
+    summary: "Chandigarh University, and certifications across tech and beyond.",
+    orbitRadius: 6.2,
+    orbitSpeed: 0.11,
+    orbitOffset: Math.PI * 0.3,
+    nodeScale: 0.4,
+  },
+];
+
+export const EXPERIENCE = [
+  {
+    role: "Data Analyst",
+    org: "VNG Education Company",
+    dates: "May 2026 – Jul 2026",
+    points: [
+      "Managed and maintained organizational data, ensuring accuracy and consistency across reporting systems.",
+      "Analyzed datasets to identify trends and support evidence-based decision-making.",
+      "Prepared clear reports and documentation to communicate findings to stakeholders.",
+      "Applied SQL and Excel-based analysis to streamline data management processes.",
+    ],
+  },
+  {
+    role: "Analyst",
+    org: "Previous Employer",
+    dates: "Jan 2024 – Feb 2025",
+    points: [
+      "Enhanced team collaboration by communicating complex findings through visualizations and reports.",
+      "Collaborated with cross-functional teams to identify opportunities for process improvement and increased efficiency.",
+      "Improved internal knowledge sharing by developing comprehensive documentation of standard operating procedures.",
+      "Increased efficiency by streamlining data analysis processes and implementing automation tools.",
+    ],
+  },
+  {
+    role: "Cybersecurity Experience / Training",
+    org: "EFXTV (Online)",
+    dates: "Ongoing",
+    points: [
+      "Gained exposure to cybersecurity fundamentals, networking, Linux/Kali Linux, and security concepts.",
+      "Practiced basic security testing and explored common cybersecurity tools and techniques.",
+      "Developed an understanding of ethical hacking, vulnerability assessment, and network security.",
+    ],
+  },
+  {
+    role: "Sales Manager",
+    org: "Youth Care",
+    dates: "Nepal",
+    points: [
+      "Led sales operations and reported directly to senior management on performance and outcomes.",
+      "Encouraged and guided youth toward employment opportunities as part of the organization's mission.",
+      "Built relationships with the community to support outreach and program goals.",
+      "Coordinated with internal teams to align sales activities with organizational objectives.",
+    ],
+  },
+  {
+    role: "Computer Teacher",
+    org: "International English Boarding School",
+    dates: "Nepal",
+    points: [
+      "Taught computer skills and fundamentals to students, tailoring lessons to varying skill levels.",
+      "Developed lesson plans and practical exercises to build students' technical competency.",
+      "Supported students in developing problem-solving and digital literacy skills.",
+    ],
+  },
+];
+
+export const PROJECTS = [
+  {
+    name: "Smart Faculty Locator",
+    status: "Completed",
+    description:
+      "🏆 Hackathon Winner — Developed a real-time faculty-location web application using Python, Streamlit, Pandas, and Firebase, helping students find faculty based on department, subject, room, day, and time.",
+  },
+  {
+    name: "SocialLock — Social Media Usage Control App",
+    status: "In Progress",
+    description:
+      "Developing an Android application using Kotlin and Jetpack Compose that allows users to select social-media apps, set usage limits, and restrict access after the limit is exceeded.",
+  },
+  {
+    name: "Student Pass/Fail Prediction",
+    status: "Completed",
+    description:
+      "Built a Machine Learning model using Python and Logistic Regression to predict student outcomes based on academic factors, including data preprocessing, EDA, model training, and evaluation.",
+  },
+  {
+    name: "Netflix Data Analysis & Dashboard",
+    status: "Completed",
+    description:
+      "Analyzed the Netflix titles dataset using Python, Pandas, and data visualization to identify trends in content, genres, release years, and other attributes.",
+  },
+  {
+    name: "IPL Auction Data Analysis",
+    status: "Completed",
+    description:
+      "Created a Power BI dashboard to analyze IPL auction data, including player prices, team spending, player categories, and auction trends.",
+  },
+  {
+    name: "Cybersecurity Practice & Labs",
+    status: "Ongoing",
+    description:
+      "Building practical knowledge of Linux/Kali Linux, networking, cybersecurity fundamentals, ethical hacking concepts, and security tools through hands-on learning.",
+  },
+];
+
+// level: self-assessed proficiency 0–100 (shown in SkillsChart)
+export const SKILLS = [
+  { name: "Python",                     group: "Programming",             level: 80 },
+  { name: "C++",                        group: "Programming",             level: 60 },
+  { name: "Java",                       group: "Programming",             level: 60 },
+  { name: "Kotlin",                     group: "Programming",             level: 55 },
+  { name: "Pandas",                     group: "Data Science & Analytics", level: 80 },
+  { name: "NumPy",                      group: "Data Science & Analytics", level: 70 },
+  { name: "SQL",                        group: "Data Science & Analytics", level: 75 },
+  { name: "Machine Learning",           group: "Data Science & Analytics", level: 65 },
+  { name: "Data Visualization",         group: "Data Science & Analytics", level: 75 },
+  { name: "Power BI",                   group: "Data Science & Analytics", level: 70 },
+  { name: "Excel",                      group: "Data Science & Analytics", level: 75 },
+  { name: "Cybersecurity Fundamentals", group: "Cybersecurity",            level: 60 },
+  { name: "Linux / Kali Linux",         group: "Cybersecurity",            level: 60 },
+  { name: "Networking Fundamentals",    group: "Cybersecurity",            level: 60 },
+  { name: "Ethical Hacking",            group: "Cybersecurity",            level: 50 },
+  { name: "Android Development",        group: "Development & Tools",      level: 55 },
+  { name: "Jetpack Compose",            group: "Development & Tools",      level: 55 },
+  { name: "Git & GitHub",               group: "Development & Tools",      level: 65 },
+  { name: "CSS / Web Development",      group: "Development & Tools",      level: 60 },
+];
+
+export const EDUCATION = [
+  {
+    school: "Chandigarh University",
+    program: "Bachelor of Computer Applications (BCA) – Data Science",
+    dates: "2023 – Present (5th Semester)",
+  },
+  {
+    school: "Hari Khetan Multiple Campus",
+    program: "Higher Secondary Education",
+    dates: "2024",
+  },
+  {
+    school: "Gautam Secondary School",
+    program: "School Education",
+    dates: "2022",
+  },
+];
+
+export const CERTIFICATIONS = [
+  "Python — Technical / Programming",
+  "Java — Technical / Programming",
+  "Data Structures — Technical / Programming",
+  "CSS / Web Development — Technical / Programming",
+  "Cybersecurity — Cybersecurity & Emerging Technology",
+  "Blockchain — Cybersecurity & Emerging Technology",
+  "Leadership — Professional / Other",
+  "Environmental Science — Professional / Other",
+  "Gender Equality — Professional / Other",
+];
+
+export const PIPELINE_SUMMARY = [
+  "2022 — Completed school education at Gautam Secondary School.",
+  "2024 — Completed higher secondary education at Hari Khetan Multiple Campus.",
+  "2023–Present — Pursuing BCA in Data Science at Chandigarh University.",
+  "Academic Development — Built foundations in programming, Python, SQL, databases, Data Structures, Machine Learning, and data analytics.",
+  "Project Development — Built projects across Data Science, Data Analytics, Android development, and Cybersecurity.",
+  "Hackathon Achievement — Won a university hackathon with Smart Faculty Locator.",
+  "Professional Development — Completed certifications in Cybersecurity, Python, Java, Data Structures, Blockchain, Leadership, and other areas.",
+  "Current Direction — Building a combined career profile in Data Science, Data Analytics, Software Development, and Cybersecurity.",
+  "Future Goal — Gain industry experience through internships, projects, certifications, and entry-level technology opportunities.",
+];
